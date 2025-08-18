@@ -1,0 +1,32 @@
+body{
+    font-family:"Segoe UI",Tanhoma,sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+}
+header{
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.btn{
+    background: white;
+    color: #0077ff;
+    padding: 80px 20px;
+    text-align: center;
+}
+.btn{
+    background: white;
+    color: #0077ff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #0077ff;
+    color: white;
+}
