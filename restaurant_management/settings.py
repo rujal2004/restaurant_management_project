@@ -128,5 +128,6 @@ STATIC_URL = 'static/'
 
 # Custom Project Settings
 RESTAURANT_NAME ="The Kitchen"
+RESTAURANT_PHONE_NUMBER = "941822555"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
