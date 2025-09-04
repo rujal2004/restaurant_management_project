@@ -39,10 +39,17 @@ class ItemView(APIView):
   
 class MenuView(View):
     def get(self,request):
-        menu_items = [
-            {"name":"Pizza","Price":125},
-            {"name":"Panner Tikka","Price":180},
-            {"name":"Cold Coffee","Price":90}
+        try: 
+          menu_items = [
+             {"name":"Pizza","Price":125},
+             {"name":"Panner Tikka","Price":180},
+             {"name":"Cold Coffee","Price":90}
         ]
+        except DatabaseError as e:
+
+             return render(request,"menu.html",
+             {"menu_items":[],
+             "error":"Sorry, we could not load the menu right now"}
+             )
         return render(request,"menu.html",{"menu_items":menu_items})
         
