@@ -37,3 +37,12 @@ class ItemView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
   
+    
+    def menu_view(request):
+        menu_items = [
+            {"name":"Pizza","Price":125},
+            {"name":"Panner Tikka","Price":180},
+            {"name":"Cold Coffee","Price":90}
+        ]
+        return render(request,"menu.html",{"menu_items":menu_items})
+        
